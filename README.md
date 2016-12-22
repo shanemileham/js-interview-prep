@@ -3,12 +3,13 @@
 ## Resources
 ### [Awesome JavaScript](https://github.com/sorrycc/awesome-javascript) [![Awesome](https://cdn.rawgit.com/sindresorhus/awesome/d7305f38d29fed78fa85652e3a63e154dd8e8829/media/badge.svg)](https://github.com/sindresorhus/awesome)
 ### [Awesome Node.js](https://github.com/sindresorhus/awesome-nodejs) [![Awesome](https://cdn.rawgit.com/sindresorhus/awesome/d7305f38d29fed78fa85652e3a63e154dd8e8829/media/badge.svg)](https://github.com/sindresorhus/awesome)
+### [MDN JavaScript Tutorial](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
 
 ## Data Structures
 _Implement, and note space and time complexity_
 
 ### Abstract Data Structures
-[Data Structures (Abstract)](https://en.wikipedia.org/wiki/List_of_data_structures)|Access|Search|Insertion|Deletion
+[Abstract Data Structures](https://en.wikipedia.org/wiki/List_of_data_structures)|Access|Search|Insertion|Deletion
 :-|
 [**Array**](https://en.wikipedia.org/wiki/Array_data_structure)|O(1)|O(n)|O(1)|O(1)
 [**Array List**](https://en.wikipedia.org/wiki/Dynamic_array)||||
@@ -24,12 +25,22 @@ Other
 - [Graphs](https://en.wikipedia.org/wiki/Graph_(abstract_data_type))
 - [Heaps](https://en.wikipedia.org/wiki/Heap_(data_structure))
 
-### Abstract Data Structures
-[Mozilla Link](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Data_structures)
-- Array
+### JavaScript Data Structures
+
+#### [Data Types](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Data_structures)
+- Primitives
+  - Boolean
+  - Null
+  - Undefined
+  - Number
+  - String
+  - Symbol (ES6)
 - Object
-- Map / WeakMap
-- Set / WeakSet
+  - Date
+  - [Array](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array)
+  - [Map](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Map) / [WeakMap](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/WeakMap)
+  - [Set](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Set) / [WeakSet](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/WeakSet)
+
 
 
 ## Algorithms
