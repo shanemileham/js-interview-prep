@@ -1,5 +1,9 @@
 # JavaScript Interview Prep ![Travis CI Badge](https://travis-ci.org/shanemileham/js-interview-prep.svg?branch=master)
 
+## Resources
+* ### [Awesome JavaScript](https://github.com/sorrycc/awesome-javascript) [![Awesome](https://cdn.rawgit.com/sindresorhus/awesome/d7305f38d29fed78fa85652e3a63e154dd8e8829/media/badge.svg)](https://github.com/sindresorhus/awesome)
+* ### [Awesome Node.js](https://github.com/sindresorhus/awesome-nodejs) [![Awesome](https://cdn.rawgit.com/sindresorhus/awesome/d7305f38d29fed78fa85652e3a63e154dd8e8829/media/badge.svg)](https://github.com/sindresorhus/awesome)
+
 ## Data Structures
 _Implement, and note space and time complexity_
 - [ ] Linked Lists
