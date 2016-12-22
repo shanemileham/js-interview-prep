@@ -17,7 +17,11 @@
   },
   "homepage": "https://github.com/shanemileham/js-interview-prep#readme",
   "dependencies": {
+  },
+  "devDependencies": {
     "chai": "^3.5.0",
+    "eslint-config-google": "^0.7.1",
+    "eslint": "^3.12.2",
     "mocha": "^3.2.0",
     "sinon": "^1.17.6"
   }
