@@ -4,7 +4,7 @@
   "description": "JavaScript Interview Prep",
   "main": "index.js",
   "scripts": {
-    "test": "mocha"
+    "test": "mocha --recursive"
   },
   "repository": {
     "type": "git",
