@@ -2,7 +2,6 @@
   "name": "js-interview-prep",
   "version": "1.0.0",
   "description": "JavaScript Interview Prep",
-  "main": "index.js",
   "scripts": {
     "test": "mocha --recursive"
   },
@@ -16,13 +15,13 @@
     "url": "https://github.com/shanemileham/js-interview-prep/issues"
   },
   "homepage": "https://github.com/shanemileham/js-interview-prep#readme",
-  "dependencies": {
-  },
+  "dependencies": {},
   "devDependencies": {
     "chai": "*",
-    "eslint-config-google": "^0.7.1",
     "eslint": "^3.12.2",
+    "eslint-config-google": "^0.7.1",
     "mocha": "*",
+    "require-directory": "^2.1.1",
     "sinon": "*"
   }
 }
