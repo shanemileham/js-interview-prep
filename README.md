@@ -6,15 +6,30 @@
 
 ## Data Structures
 _Implement, and note space and time complexity_
-- [ ] [Linked Lists](https://en.wikipedia.org/wiki/Linked_list)
-- [ ] [Trees](https://en.wikipedia.org/wiki/Tree_(data_structure)), [Tries](https://en.wikipedia.org/wiki/Trie), and [Graphs](https://en.wikipedia.org/wiki/Graph_(abstract_data_type))
-- [ ] [Stacks](https://en.wikipedia.org/wiki/Stack_(abstract_data_type)) and [Queues](https://en.wikipedia.org/wiki/Queue_(abstract_data_type))
-- [ ] [Heaps](https://en.wikipedia.org/wiki/Heap_(data_structure))
-- [ ] [ArrayLists](https://en.wikipedia.org/wiki/Dynamic_array)
-- [ ] [Hash Tables](https://en.wikipedia.org/wiki/Hash_table)
 
-[List of Data Structures](https://en.wikipedia.org/wiki/List_of_data_structures)
+### Abstract Data Structures
+[Data Structures (Abstract)](https://en.wikipedia.org/wiki/List_of_data_structures)|Access|Search|Insertion|Deletion
+:-|
+[**Array**](https://en.wikipedia.org/wiki/Array_data_structure)|O(1)|O(n)|O(1)|O(1)
+[**Array List**](https://en.wikipedia.org/wiki/Dynamic_array)||||
+[**Stack**](https://en.wikipedia.org/wiki/Stack_(abstract_data_type))|O(n)|O(n)|O(1)|O(1)
+[**Queue**](https://en.wikipedia.org/wiki/Queue_(abstract_data_type))|O(n)|O(n)|O(1)|O(1)
+[**Linked List**](https://en.wikipedia.org/wiki/Linked_list)|O(n)|O(n)|O(1)|O(1)
+[**Hash Table**](https://en.wikipedia.org/wiki/Hash_table)||||
+[**Binary Search Tree**](https://en.wikipedia.org/wiki/Binary_search_tree)||||
 
+Other
+- [Trees](https://en.wikipedia.org/wiki/Tree_(data_structure))
+- [Tries](https://en.wikipedia.org/wiki/Trie)
+- [Graphs](https://en.wikipedia.org/wiki/Graph_(abstract_data_type))
+- [Heaps](https://en.wikipedia.org/wiki/Heap_(data_structure))
+
+### Abstract Data Structures
+[Mozilla Link](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Data_structures)
+- Array
+- Object
+- Map / WeakMap
+- Set / WeakSet
 
 
 ## Algorithms
