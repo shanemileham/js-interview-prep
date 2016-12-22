@@ -6,7 +6,7 @@
 
 ## Data Structures
 _Implement, and note space and time complexity_
-- [ ] [Linked Lists](https://en.wikipedia.org/wiki/Linked_list))
+- [ ] [Linked Lists](https://en.wikipedia.org/wiki/Linked_list)
 - [ ] [Trees](https://en.wikipedia.org/wiki/Tree_(data_structure)), [Tries](https://en.wikipedia.org/wiki/Trie), and [Graphs](https://en.wikipedia.org/wiki/Graph_(abstract_data_type))
 - [ ] [Stacks](https://en.wikipedia.org/wiki/Stack_(abstract_data_type)) and [Queues](https://en.wikipedia.org/wiki/Queue_(abstract_data_type))
 - [ ] [Heaps](https://en.wikipedia.org/wiki/Heap_(data_structure))
@@ -14,6 +14,8 @@ _Implement, and note space and time complexity_
 - [ ] [Hash Tables](https://en.wikipedia.org/wiki/Hash_table)
 
 [List of Data Structures](https://en.wikipedia.org/wiki/List_of_data_structures)
+
+
 
 ## Algorithms
 - [ ] [Breadth-First Search](https://en.wikipedia.org/wiki/Breadth-first_search)
