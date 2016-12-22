@@ -3,7 +3,8 @@
   "version": "1.0.0",
   "description": "JavaScript Interview Prep",
   "scripts": {
-    "test": "mocha --recursive"
+    "lint": "eslint lib/**/*.js test/**/*.js",
+    "test": "npm run lint && mocha --recursive"
   },
   "repository": {
     "type": "git",
