@@ -6,20 +6,23 @@
 
 ## Data Structures
 _Implement, and note space and time complexity_
-- [ ] Linked Lists
-- [ ] Trees, Tries, and Graphs
-- [ ] Stacks and Queues
-- [ ] Heaps
-- [ ] Vectors / ArrayLists
-- [ ] Hash Tables
+- [ ] [Linked Lists](https://en.wikipedia.org/wiki/Linked_list))
+- [ ] [Trees](https://en.wikipedia.org/wiki/Tree_(data_structure)), [Tries](https://en.wikipedia.org/wiki/Trie), and [Graphs](https://en.wikipedia.org/wiki/Graph_(abstract_data_type))
+- [ ] [Stacks](https://en.wikipedia.org/wiki/Stack_(abstract_data_type)) and [Queues](https://en.wikipedia.org/wiki/Queue_(abstract_data_type))
+- [ ] [Heaps](https://en.wikipedia.org/wiki/Heap_(data_structure))
+- [ ] [ArrayLists](https://en.wikipedia.org/wiki/Dynamic_array)
+- [ ] [Hash Tables](https://en.wikipedia.org/wiki/Hash_table)
 
+[List of Data Structures](https://en.wikipedia.org/wiki/List_of_data_structures)
 
 ## Algorithms
-- [ ] Breadth-First Search
-- [ ] Depth-First Search
-- [ ] Binary Search
-- [ ] Merge Sort
-- [ ] Quick Sort
+- [ ] [Breadth-First Search](https://en.wikipedia.org/wiki/Breadth-first_search)
+- [ ] [Depth-First Search](https://en.wikipedia.org/wiki/Depth-first_search)
+- [ ] [Binary Search](https://en.wikipedia.org/wiki/Binary_search_algorithm)
+- [ ] [Merge Sort](https://en.wikipedia.org/wiki/Merge_sort)
+- [ ] [Quick Sort](https://en.wikipedia.org/wiki/Quicksort)
+
+
 
 ## Cracking the Coding Interview (6th Edition)
 
@@ -64,7 +67,7 @@ _Implement, and note space and time complexity_
 - [ ] 4.9 - BST Sequences
 - [ ] 4.10 - Check Subtree
 - [ ] 4.11 - Random Node
-- [ ] 4.12 Paths with Sum
+- [ ] 4.12 - Paths with Sum
 
 ### Chapter 5 - Bit Manipulation
 
@@ -80,7 +83,8 @@ _Implement, and note space and time complexity_
 
 ### Chapter 11 - Testing
 
-### Chapters 12-15 (language specific)
+### Chapters 12-15
+_Language specific; not relevant_
 
 ### Chapter 16 - Moderate
 

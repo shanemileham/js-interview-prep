@@ -2,7 +2,7 @@
 
 const chai = require('chai');
 const should = chai.should(); // eslint-disable-line no-unused-vars
-const Stack = require('../../dataStructures/stack.js');
+const Stack = require('../../dataStructures/Stack.js');
 
 describe('Stack', function() {
   it('should just be an array', ()=>{});
