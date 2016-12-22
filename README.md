@@ -10,7 +10,7 @@ _Implement, and note space and time complexity_
 
 ### Abstract Data Structures
 [Abstract Data Structures](https://en.wikipedia.org/wiki/List_of_data_structures)|Access|Search|Insertion|Deletion
-:-|
+---|---|---|---|---
 [**Array**](https://en.wikipedia.org/wiki/Array_data_structure)|O(1)|O(n)|O(1)|O(1)
 [**Array List**](https://en.wikipedia.org/wiki/Dynamic_array)||||
 [**Stack**](https://en.wikipedia.org/wiki/Stack_(abstract_data_type))|O(n)|O(n)|O(1)|O(1)
@@ -30,7 +30,7 @@ Other
 #### [Data Types](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Data_structures)
 
 Type|Typeof|Immutable/Primitive?
-:-|
+---|---|---
 undefined|undefined|Yes
 null|Object|No
 ""|String|Yes
@@ -46,7 +46,7 @@ Date|Object|No
 Function|Object|No
 [Map](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Map) / [WeakMap](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/WeakMap)|Object|No
 [Set](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Set) / [WeakSet](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/WeakSet)|Object|No
-
+* Note: `Null` is also a type, but `typeof(null)` is `Object`
 
 
 ## Algorithms
