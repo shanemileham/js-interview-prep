@@ -10,7 +10,7 @@ describe('1.1 - Is Unique', function() {
     let string = 'qwerty';
     c1q1(string).should.be.true;
   });
-  it('should return false if any character repeats', ()=>{
+  it('should return false if any character repeats', () => {
     let string = 'xqwertyuiopx';
     c1q1(string).should.be.false;
   });
