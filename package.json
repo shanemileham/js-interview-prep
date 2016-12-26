@@ -4,8 +4,8 @@
   "description": "JavaScript Interview Prep",
   "scripts": {
     "lint": "eslint lib/**/*.js test/**/*.js",
-    "test": "npm run lint && mocha --recursive && npm run document",
-    "document": "node_modules/.bin/jsdoc --configure .jsdoc.json --verbose"
+    "document": "node_modules/.bin/jsdoc --configure .jsdoc.json --verbose",
+    "test": "npm run lint && npm run document && mocha --recursive"
   },
   "repository": {
     "type": "git",
