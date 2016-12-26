@@ -12,12 +12,12 @@ _Implement, and note space and time complexity_
 [Abstract Data Structures](https://en.wikipedia.org/wiki/List_of_data_structures)|Access|Search|Insertion|Deletion
 ---|---|---|---|---
 [**Array**](https://en.wikipedia.org/wiki/Array_data_structure)|O(1)|O(n)|O(1)|O(1)
-[**Array List**](https://en.wikipedia.org/wiki/Dynamic_array)||||
+[**Array List**](https://en.wikipedia.org/wiki/Dynamic_array)|O(1)|O(n)|O(1)|O(1)
 [**Stack**](https://en.wikipedia.org/wiki/Stack_(abstract_data_type))|O(n)|O(n)|O(1)|O(1)
 [**Queue**](https://en.wikipedia.org/wiki/Queue_(abstract_data_type))|O(n)|O(n)|O(1)|O(1)
 [**Linked List**](https://en.wikipedia.org/wiki/Linked_list)|O(n)|O(n)|O(1)|O(1)
-[**Hash Table**](https://en.wikipedia.org/wiki/Hash_table)||||
-[**Binary Search Tree**](https://en.wikipedia.org/wiki/Binary_search_tree)||||
+[**Hash Table**](https://en.wikipedia.org/wiki/Hash_table)|N/A|O(1)|O(1)|O(1)
+[**Binary Search Tree**](https://en.wikipedia.org/wiki/Binary_search_tree)|O(log n)|O(log n)|O(log n)|O(log n)
 
 Other
 - [Trees](https://en.wikipedia.org/wiki/Tree_(data_structure))
@@ -50,13 +50,20 @@ Function|Object|No
 
 
 ## Algorithms
-- [ ] [Breadth-First Search](https://en.wikipedia.org/wiki/Breadth-first_search)
-- [ ] [Depth-First Search](https://en.wikipedia.org/wiki/Depth-first_search)
-- [ ] [Binary Search](https://en.wikipedia.org/wiki/Binary_search_algorithm)
-- [ ] [Merge Sort](https://en.wikipedia.org/wiki/Merge_sort)
-- [ ] [Quick Sort](https://en.wikipedia.org/wiki/Quicksort)
 
+### Search Algorithms
+- [Binary Search](https://en.wikipedia.org/wiki/Binary_search_algorithm)
+- [Breadth-First Search](https://en.wikipedia.org/wiki/Breadth-first_search)
+- [Depth-First Search](https://en.wikipedia.org/wiki/Depth-first_search)
 
+Algorithm | Time (Best) | Time (Average) | Time (Worst) | Space Complexity
+---|---|---|---|---
+[Quick Sort](https://en.wikipedia.org/wiki/Quicksort)|Ω(n log(n))|Θ(n log(n))|O(n^2)|O(log(n))
+[Merge Sort](https://en.wikipedia.org/wiki/Merge_sort)|Ω(n log(n))|Θ(n log(n))|O(n log(n))|O(n)
+
+Resources:
+- http://bigocheatsheet.com/
+- https://www.toptal.com/developers/sorting-algorithms
 
 ## Cracking the Coding Interview (6th Edition)
 
