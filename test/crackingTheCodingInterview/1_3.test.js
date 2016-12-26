@@ -28,8 +28,8 @@ describe('1.3 - URLify', function() {
     it(solution.name + ' ' +
       'should not contain any spaces', () => {
       const stringA = 'asdf';
-      const stringB = 'qwe rty';
-      const stringC = 'a b c ';
+      const stringB = 'qwe rty  ';
+      const stringC = 'a b c    ';
       solution(stringA).indexOf(' ').should.equal(-1);
       solution(stringB).indexOf(' ').should.equal(-1);
       solution(stringC).indexOf(' ').should.equal(-1);
@@ -37,11 +37,11 @@ describe('1.3 - URLify', function() {
     it(solution.name + ' ' +
       'should have expected output', () => {
       const stringA = 'asdf';
-      const stringB = 'qwe rty';
-      const stringC = 'a b c ';
+      const stringB = 'qwe rty  ';
+      const stringC = 'a b c    ';
       solution(stringA).should.equal('asdf');
       solution(stringB).should.equal('qwe%20rty');
-      solution(stringC).should.equal('a%20b%20c%20');
+      solution(stringC).should.equal('a%20b%20c');
     });
   });
 });
