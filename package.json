@@ -4,7 +4,8 @@
   "description": "JavaScript Interview Prep",
   "scripts": {
     "lint": "eslint lib/**/*.js test/**/*.js",
-    "test": "npm run lint && mocha --recursive"
+    "test": "npm run lint && mocha --recursive && npm run document",
+    "document": "node_modules/.bin/jsdoc --configure .jsdoc.json --verbose"
   },
   "repository": {
     "type": "git",
@@ -21,6 +22,8 @@
     "chai": "*",
     "eslint": "^3.12.2",
     "eslint-config-google": "^0.7.1",
+    "jsdoc": "^3.4.3",
+    "minami": "^1.1.1",
     "mocha": "*",
     "require-directory": "^2.1.1",
     "sinon": "*"

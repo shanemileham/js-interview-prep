@@ -69,6 +69,10 @@ Resources:
 
 ## Cracking the Coding Interview (6th Edition)
 
+*You might want to consider buying the book  [here](https://www.amazon.com/Cracking-Coding-Interview-Programming-Questions/dp/0984782850/ref=dp_ob_title_bk) if you are preparing for an interview.
+The book covers much more than just these questions;
+this repository is primarily for my own use in preparing for a JavaScript position.*
+
 ### Chapter 1 - Arrays and Strings
 - [x] 1.1 - Is Unique
 - [x] 1.2 - Check Permutation
