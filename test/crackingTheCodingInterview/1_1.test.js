@@ -10,13 +10,13 @@ describe('1.1 - Is Unique', function() {
     it(solution.name + ' ' +
       'should return true\t' +
       'if all characters are unique', () => {
-      let string = 'qwerty';
+      const string = 'qwerty';
       solution(string).should.be.true;
     });
     it(solution.name + ' ' +
       'should return false\t' +
       'if any character repeats', () => {
-      let string = 'xqwertyuiopx';
+      const string = 'xqwertyuiopx';
       solution(string).should.be.false;
     });
   });

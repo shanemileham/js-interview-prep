@@ -11,36 +11,36 @@ describe('1.2 - Check Permutation', function() {
     it(solution.name + ' ' +
       'should return true\t' +
       'if strings are identical', () => {
-      let stringA = 'qwerty';
-      let stringB = 'yqwetr';
+      const stringA = 'qwerty';
+      const stringB = 'yqwetr';
       solution(stringA, stringB).should.be.true;
     });
     it(solution.name + ' ' +
       'should return true\t' +
       'if strings are permutations', () => {
-      let stringA = 'qwerty';
-      let stringB = 'qwerty';
+      const stringA = 'qwerty';
+      const stringB = 'qwerty';
       solution(stringA, stringB).should.be.true;
     });
     it(solution.name + ' ' +
       'should return false\t' +
       'if strings are different lengths', () => {
-      let stringA = 'abcdef';
-      let stringB = 'abcde';
+      const stringA = 'abcdef';
+      const stringB = 'abcde';
       solution(stringA, stringB).should.be.false;
     });
     it(solution.name + ' ' +
       'should return false\t' +
       'if strings have same letters but of different amounts', () => {
-      let stringA = 'abcdeef';
-      let stringB = 'abcdeff';
+      const stringA = 'abcdeef';
+      const stringB = 'abcdeff';
       solution(stringA, stringB).should.be.false;
     });
     it(solution.name + ' ' +
       'should return false\t' +
       'if strings are completely different', () => {
-      let stringA = 'abcdef';
-      let stringB = 'ghijkl';
+      const stringA = 'abcdef';
+      const stringB = 'ghijkl';
       solution(stringA, stringB).should.be.false;
     });
   });
