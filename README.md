@@ -4,9 +4,9 @@
 ### [Awesome JavaScript](https://github.com/sorrycc/awesome-javascript) [![Awesome](https://cdn.rawgit.com/sindresorhus/awesome/d7305f38d29fed78fa85652e3a63e154dd8e8829/media/badge.svg)](https://github.com/sindresorhus/awesome)
 ### [Awesome Node.js](https://github.com/sindresorhus/awesome-nodejs) [![Awesome](https://cdn.rawgit.com/sindresorhus/awesome/d7305f38d29fed78fa85652e3a63e154dd8e8829/media/badge.svg)](https://github.com/sindresorhus/awesome)
 ### [MDN JavaScript Tutorial](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
+### [Cracking the Coding Interview (6th Edition)](https://www.amazon.com/Cracking-Coding-Interview-Programming-Questions/dp/0984782850/ref=dp_ob_title_bk)
 
 ## Data Structures
-_Implement, and note space and time complexity_
 
 ### Abstract Data Structures
 [Abstract Data Structures](https://en.wikipedia.org/wiki/List_of_data_structures)|Access|Search|Insertion|Deletion
@@ -31,19 +31,20 @@ Other
 
 Type|Typeof|Immutable/Primitive?
 ---|---|---
-undefined|undefined|Yes
-null|Object|No
-""|String|Yes
-123|Number|Yes
-true|Boolean|Yes
-[]|Array|Yes
-String|Object|No
-Number|Object|No
-Boolean|Object|No
+`undefined`|undefined|Yes
+`null`|Object|No
+`""`|String|Yes
+`123`|Number|Yes
+`true`|Boolean|Yes
+`[]`|Array|Yes
+[Object](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object)|Object|No
+[String](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String)|Object|No
+[Number](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number)|Object|No
+[Boolean](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean)|Object|No
 [Array](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array)|Object|No
-RegExp|Object|No
-Date|Object|No
-Function|Object|No
+[RegExp](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/RegExp)|Object|No
+[Date](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date)|Object|No
+[Function](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Function)|Object|No
 [Map](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Map) / [WeakMap](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/WeakMap)|Object|No
 [Set](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Set) / [WeakSet](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/WeakSet)|Object|No
 * Note: `Null` is also a type, but `typeof(null)` is `Object`
@@ -56,6 +57,7 @@ Function|Object|No
 - [Breadth-First Search](https://en.wikipedia.org/wiki/Breadth-first_search)
 - [Depth-First Search](https://en.wikipedia.org/wiki/Depth-first_search)
 
+### Sort Algorithms
 Algorithm | Time (Best) | Time (Average) | Time (Worst) | Space Complexity
 ---|---|---|---|---
 [Quick Sort](https://en.wikipedia.org/wiki/Quicksort)|Ω(n log(n))|Θ(n log(n))|O(n^2)|O(log(n))
