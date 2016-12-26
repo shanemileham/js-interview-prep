@@ -6,12 +6,18 @@ What if you cannot use additional data structures?
 require('../bootstrap.test.js');
 
 describe('1.1 - Is Unique', function() {
-  it('should return true if all characters are unique', () => {
-    let string = 'qwerty';
-    c1q1(string).should.be.true;
-  });
-  it('should return false if any character repeats', () => {
-    let string = 'xqwertyuiopx';
-    c1q1(string).should.be.false;
+  c1q1.forEach(function(solution) {
+    it(solution.name + ' ' +
+      'should return true\t' +
+      'if all characters are unique', () => {
+      let string = 'qwerty';
+      solution(string).should.be.true;
+    });
+    it(solution.name + ' ' +
+      'should return false\t' +
+      'if any character repeats', () => {
+      let string = 'xqwertyuiopx';
+      solution(string).should.be.false;
+    });
   });
 });

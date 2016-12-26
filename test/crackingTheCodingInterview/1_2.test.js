@@ -6,9 +6,8 @@ if one is a permutation of the other.
 
 require('../bootstrap.test.js');
 
-describe('1.2 - Check Permutation', function(
-  solutions = [c1q2a, c1q2b]) {
-  solutions.forEach(function(solution) {
+describe('1.2 - Check Permutation', function() {
+  c1q2.forEach(function(solution) {
     it(solution.name + ' ' +
       'should return true\t' +
       'if strings are identical', () => {
