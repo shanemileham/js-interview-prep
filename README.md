@@ -27,7 +27,7 @@ Other
 
 ### JavaScript Data Structures
 
-#### [Data Types](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Data_structures)
+#### [Data Types](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Data_structures) and [Standard Objects](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects)
 
 Type|Typeof|Immutable/Primitive?
 ---|---|---
