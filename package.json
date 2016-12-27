@@ -6,7 +6,7 @@
     "lint": "eslint lib/**/*.js test/**/*.js",
     "document": "node_modules/.bin/jsdoc --configure .jsdoc.json --verbose",
     "docs": "open ./docs/js-interview-prep/1.0.0/index.html",
-    "test": "nyc --cache --check-coverage --lines 100 mocha --recursive",
+    "test": "npm run lint && npm run document && nyc --cache --check-coverage --lines 100 mocha --recursive",
     "coverage": "nyc report --reporter=text-lcov > coverage.lcov && codecov"
   },
   "repository": {
