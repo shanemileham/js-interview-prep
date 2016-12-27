@@ -5,8 +5,9 @@
   "scripts": {
     "lint": "eslint lib/**/*.js test/**/*.js",
     "document": "node_modules/.bin/jsdoc --configure .jsdoc.json --verbose",
-    "cover": "istanbul cover ./node_modules/mocha/bin/_mocha --report lcovonly -- -R spec",
-    "test": "npm run lint && npm run document && npm run cover && mocha --recursive"
+    "docs": "open ./docs/js-interview-prep/1.0.0/index.html",
+    "test": "nyc --cache --check-coverage --lines 100 mocha --recursive",
+    "coverage": "nyc report --reporter=text-lcov > coverage.lcov && codecov"
   },
   "repository": {
     "type": "git",
@@ -21,12 +22,14 @@
   "dependencies": {},
   "devDependencies": {
     "chai": "*",
+    "codecov": "^1.0.1",
     "eslint": "^3.12.2",
     "eslint-config-google": "^0.7.1",
     "istanbul": "^0.4.5",
     "jsdoc": "^3.4.3",
     "minami": "^1.1.1",
     "mocha": "*",
+    "nyc": "^10.0.0",
     "require-directory": "^2.1.1",
     "sinon": "*"
   }
