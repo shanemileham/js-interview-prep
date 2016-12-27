@@ -11,11 +11,11 @@ require('../bootstrap.test.js');
 describe('1.4 - Palindrome Permutation', function() {
   c1q4.forEach(function(solution) {
     it(solution.name + ' ' +
-      'should return OUTPUT\t' +
-      'if input is INPUT', () => {
-        const input = 'INPUT';
-        const output = 'OUTPUT';
-        solution(input).should.equal(output);
+      'should return false\t' +
+      'if strings are different lengths', () => {
+        const stringA = '1';
+        const stringB = '11';
+        solution(stringA, stringB).should.be.false;
     });
   });
 });
