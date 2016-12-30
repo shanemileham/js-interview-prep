@@ -37,7 +37,7 @@ Other
 Type|Typeof|Immutable/Primitive?
 ---|---|---
 `undefined`|undefined|Yes
-`null`|Object|No
+`null`|Object*|?
 `""`|String|Yes
 `123`|Number|Yes
 `true`|Boolean|Yes
