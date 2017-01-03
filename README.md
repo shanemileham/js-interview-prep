@@ -108,7 +108,7 @@ this repository is primarily for my own use in preparing for a JavaScript positi
 - [ ] 1.9 - String Rotation
 
 ### Chapter 2 - Linked Lists
-- [ ] 2.1 - Remove Dups
+- [x] 2.1 - Remove Dups
 - [ ] 2.2 - Return Kth to Last
 - [ ] 2.3 - Delete Middle Node
 - [ ] 2.4 - Partition
