@@ -44,6 +44,8 @@ Other
 
 #### [Data Types](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Data_structures) and [Standard Objects](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects)
 
+JS has 6 primitives (Undefined, Null, Boolean, Number, String, Symbol) and Object. Primitives are immutable, but objects are mutable.
+
 Type|Typeof|Immutable/Primitive?
 ---|---|---
 `undefined`|undefined|Yes
@@ -75,8 +77,14 @@ Type|Typeof|Immutable/Primitive?
 ### Sort Algorithms
 Algorithm | Time (Best) | Time (Average) | Time (Worst) | Space Complexity
 ---|---|---|---|---
-[Quick Sort](https://en.wikipedia.org/wiki/Quicksort)|Ω(n log(n))|Θ(n log(n))|O(n^2)|O(log(n))
-[Merge Sort](https://en.wikipedia.org/wiki/Merge_sort)|Ω(n log(n))|Θ(n log(n))|O(n log(n))|O(n)
+[Selection Sort](https://www.toptal.com/developers/sorting-algorithms/selection-sort)|Ω(n^2)|Θ(n^2)|O(n^2)|O(1)
+[Insertion Sort](https://www.toptal.com/developers/sorting-algorithms/insertion-sort)|Ω(n)|Θ(n^2)|O(n^2)|O(1)
+[Bubble Sort](https://www.toptal.com/developers/sorting-algorithms/bubble-sort)|Ω(n)|Θ(n^2)|O(n^2)|O(1)
+[Quick Sort](https://www.toptal.com/developers/sorting-algorithms/quick-sort)|Ω(n log(n))|Θ(n log(n))|O(n^2)|O(log(n))
+[Merge Sort](https://www.toptal.com/developers/sorting-algorithms/merge-sort)|Ω(n log(n))|Θ(n log(n))|O(n log(n))|O(n)
+[Heap Sort](https://www.toptal.com/developers/sorting-algorithms/heap-sort)|Ω(n log(n))|Θ(n log(n))|O(n log(n))|O(1)
+
+
 
 Resources:
 - http://bigocheatsheet.com/
