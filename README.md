@@ -25,6 +25,10 @@
 ### Future Reading
 * [Functional Light JS](https://github.com/getify/Functional-Light-JS)
 
+### Style Guides
+* [Google JS Style Guide](https://google.github.io/styleguide/jsguide.html)
+* [Airbnb JS Style Guide](http://airbnb.io/javascript/)
+
 ## Data Structures
 
 ### Abstract Data Structures
