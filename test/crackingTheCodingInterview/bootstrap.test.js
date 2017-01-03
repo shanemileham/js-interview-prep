@@ -1,0 +1,1 @@
+require('../bootstrap.test.js');

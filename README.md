@@ -19,6 +19,7 @@
 
 ### Interview Prep
 * [Cracking the Coding Interview (6th Edition)](https://www.amazon.com/Cracking-Coding-Interview-Programming-Questions/dp/0984782850/ref=dp_ob_title_bk)
+* [Cracking the Coding Interview JS Solutions](https://github.com/careercup/CtCI-6th-Edition-JavaScript-ES2015)
 * [Awesome Interview Questions](https://github.com/MaximAbramchuck/awesome-interview-questions) [![Awesome](https://cdn.rawgit.com/sindresorhus/awesome/d7305f38d29fed78fa85652e3a63e154dd8e8829/media/badge.svg)](https://github.com/sindresorhus/awesome)
 
 ### Future Reading
@@ -150,15 +151,13 @@ this repository is primarily for my own use in preparing for a JavaScript positi
 
 ### Chapter 8 - Recursion and Dynamic Programming
 
-### Chapter 9 - System Design and Scalability
-
 ### Chapter 10 - Sorting and Searching
-
-### Chapter 11 - Testing
-
-### Chapters 12-15
-_Language specific; not relevant_
 
 ### Chapter 16 - Moderate
 
 ### Chapter 17 - Hard
+
+### Omitted Chapters
+* 9 - System Design and Scalability: No coding / Not in the scope of this preparation guide
+* 11 - Testing: Used on all coding questions
+* 12-15: Language specific; not relevant
