@@ -9,12 +9,14 @@ require('../bootstrap.test.js');
 
 describe('1.7 - Rotate Matrix', function() {
   c1q7.forEach(function(solution) {
-    it(solution.name + ' ' +
-      'should return OUTPUT\t' +
-      'if input is INPUT', () => {
-        const input = 'INPUT';
-        const output = 'OUTPUT';
-        solution(input).should.equal(output);
+    describe('Solution: ' + solution.name, function() {
+      it(solution.name + ' ' +
+        'should return OUTPUT\t' +
+        'if input is INPUT', () => {
+          const input = 'INPUT';
+          const output = 'OUTPUT';
+          solution(input).should.equal(output);
+      });
     });
   });
 });

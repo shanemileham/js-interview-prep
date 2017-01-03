@@ -11,12 +11,14 @@ require('../bootstrap.test.js');
 
 describe('1.5 - One Away', function() {
   c1q5.forEach(function(solution) {
-    it(solution.name + ' ' +
-      'should return OUTPUT\t' +
-      'if input is INPUT', () => {
-        const input = 'INPUT';
-        const output = 'OUTPUT';
-        solution(input).should.equal(output);
+    describe('Solution: ' + solution.name, function() {
+      it(solution.name + ' ' +
+        'should return OUTPUT\t' +
+        'if input is INPUT', () => {
+          const input = 'INPUT';
+          const output = 'OUTPUT';
+          solution(input).should.equal(output);
+      });
     });
   });
 });
