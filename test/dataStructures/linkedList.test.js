@@ -8,7 +8,7 @@ describe('LinkedList', function() {
     sll.push(1);
     sll.push(2);
     sll.push('str');
-    sll.toString().should.equal('[1, 2, str]');
+    sll.toString().should.equal('[ 1, 2, str ]');
 
     // Pop 1
     const pop1 = sll.pop();
