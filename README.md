@@ -22,7 +22,13 @@
 * [Cracking the Coding Interview JS Solutions](https://github.com/careercup/CtCI-6th-Edition-JavaScript-ES2015)
 * [Awesome Interview Questions](https://github.com/MaximAbramchuck/awesome-interview-questions) [![Awesome](https://cdn.rawgit.com/sindresorhus/awesome/d7305f38d29fed78fa85652e3a63e154dd8e8829/media/badge.svg)](https://github.com/sindresorhus/awesome)
 
-### Future Reading
+### ES2015 Resources
+* [ES6 Features](https://github.com/lukehoban/es6features)
+* [ES6 Cheatsheet](https://github.com/DrkSephy/es6-cheatsheet)
+
+### Functional Programming
+* [Why Programmers Need Limits](https://medium.com/@cscalfani/why-programmers-need-limits-3d96e1a0a6db#.imre1jqxt)
+* [So You Want to be a Functional Programmer](https://medium.com/@cscalfani/so-you-want-to-be-a-functional-programmer-part-1-1f15e387e536#.em3lo7lke)
 * [Functional Light JS](https://github.com/getify/Functional-Light-JS)
 
 ### Style Guides
