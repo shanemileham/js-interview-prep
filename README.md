@@ -150,15 +150,13 @@ this repository is primarily for my own use in preparing for a JavaScript positi
 
 ### Chapter 8 - Recursion and Dynamic Programming
 
-### Chapter 9 - System Design and Scalability
-
 ### Chapter 10 - Sorting and Searching
-
-### Chapter 11 - Testing
-
-### Chapters 12-15
-_Language specific; not relevant_
 
 ### Chapter 16 - Moderate
 
 ### Chapter 17 - Hard
+
+### Omitted Chapters
+* 9 - System Design and Scalability: No coding / Not in the scope of this preparation guide
+* 11 - Testing: Used on all coding questions
+* 12-15: Language specific; not relevant
