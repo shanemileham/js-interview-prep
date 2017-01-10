@@ -135,6 +135,16 @@ Primitives are immutable, but objects are mutable.
     * `indexOf(searchElement, fromIndex=0)` - Returns the first (least) index of an element within the array equal to the specified value, or -1 if none is found.
     * `join(separator=',')` - Joins all elements of an array into a string.
     * `slice(begin=0, end=length)` - Extracts a section of an array and returns a new array.
+  * Iteration Methods
+    * `find()` - Returns the found value in the array, if an element in the array satisfies the provided testing function or undefined if not found.
+    * `findIndex()` - Returns the found index in the array, if an element in the array satisfies the provided testing function or -1 if not found.
+    * `every()` - Returns true if every element in this array satisfies the provided testing function.
+    * `some()` - Returns true if at least one element in this array satisfies the provided testing function.
+    * `filter()` - Creates a new array with all of the elements of this array for which the provided filtering function returns true.
+    * `forEach()` - Calls a function for each element in the array.
+    * `map()` - Creates a new array with the results of calling a provided function on every element in this array.
+    * `reduce()` - Apply a function against an accumulator and each value of the array (from left-to-right) as to reduce it to a single value.
+    * `reduceRight()` - Apply a function against an accumulator and each value of the array (from right-to-left) as to reduce it to a single value.
 * [Map](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Map) / [WeakMap](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/WeakMap)
   * METHOD
 * [Set](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Set) / [WeakSet](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/WeakSet)
