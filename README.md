@@ -35,9 +35,66 @@
 * [Google JS Style Guide](https://google.github.io/styleguide/jsguide.html)
 * [Airbnb JS Style Guide](http://airbnb.io/javascript/)
 
-## Data Structures
+---
 
-### Abstract Data Structures
+## JavaScript Data Structures
+
+Primitives are immutable, but objects are mutable.
+
+### [Data Types](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Data_structures) (Primitives)
+
+* Undefined
+* Null (Note: `typeof(null)` is `Object`)
+* Boolean
+* Number
+* String
+* Symbol
+
+### [Standard Objects](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects)
+
+* [Object](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object)
+  * `keys()` - Returns an array containing the names of all of the given object's own enumerable properties.
+  * `values()` - Returns an array of a given object's own enumerable values.
+* [Function](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Function)
+  * `length` - Specifies the number of arguments expected by the function.
+  * `name` - The name of the function.
+  * `apply(thisArg, [argsArray])` - Calls a function with a given `this` value and arguments provided as an array (or an array-like object).
+  * `bind(thisArg[, arg1[, arg2[, ...]]])` - Creates a new function that, when called, has its `this` keyword set to the provided value, with a given sequence of arguments preceding any provided when the new function is called.
+  * `call(thisArg[, arg1[, arg2[, ...]]])` - Calls a function with a given this value and arguments provided individually.
+* [Boolean](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean)
+  * Do not confuse the primitive Boolean values true and false with the true and false values of the Boolean object. `new Boolean("false") === true`
+* [String](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String)
+  * `length` - Reflects the length of the string.
+  * `chatAr(index)` - Returns the character at the specified index.
+  * `charCodeAt(index)` - Returns a number indicating the Unicode value of the character at the given index.
+  * `indexOf(searchValue[, fromIndex])` - Returns the index within the calling String object of the first occurrence of the specified value, or -1 if not found.
+  * `match(regexp)` - Returns an Array containing the entire match result and any parentheses-captured matched results; null if there were no matches.
+  * `slice(beginSlice[, endSlice])` - Returns a new string containing the extracted section of the string.
+  * `split([separator[, limit]])` - Returns an array of strings split at each point where the separator occurs in the given string.
+  * `substring(indexStart[, indexEnd])` - Returns a new string containing the extracted section of the given string.
+* [Number](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number)
+  * `EPSILON` - The smallest interval between two representable numbers
+  * `MAX_SAFE_INTEGER` / `MIN_SAFE_INTEGER`
+  * `MAX_VALUE` / `MIN_VALUE`
+  * `POSITIVE_INFINITY` / `NEGATIVE_INFINITY`
+  * `NaN` - Special "not a number" value
+  * `isNaN()` - Determine whether the passed value is NaN.
+  * `parseInt(string, radix)` - Returns an integer number parsed from the given string. If the first character cannot be converted to a number, NaN is returned.
+  * `parseFloat(string)` - Returns a floating point number parsed from the given string. If the first character cannot be converted to a number, NaN is returned.
+* [Array](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array)
+  * METHOD
+* [RegExp](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/RegExp)
+  * METHOD
+* [Date](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date)
+  * METHOD
+* [Map](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Map) / [WeakMap](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/WeakMap)
+  * METHOD
+* [Set](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Set) / [WeakSet](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/WeakSet)
+  * METHOD
+
+---
+
+## Abstract Data Structures
 [Abstract Data Structures](https://en.wikipedia.org/wiki/List_of_data_structures)|Access|Search|Insertion|Deletion
 ---|---|---|---|---
 [**Array**](https://en.wikipedia.org/wiki/Array_data_structure)|O(1)|O(n)|O(1)|O(1)
@@ -53,32 +110,6 @@ Other
 - [Tries](https://en.wikipedia.org/wiki/Trie)
 - [Graphs](https://en.wikipedia.org/wiki/Graph_(abstract_data_type))
 - [Heaps](https://en.wikipedia.org/wiki/Heap_(data_structure))
-
-### JavaScript Data Structures
-
-#### [Data Types](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Data_structures) and [Standard Objects](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects)
-
-JS has 6 primitives (Undefined, Null, Boolean, Number, String, Symbol) and Object. Primitives are immutable, but objects are mutable.
-
-Type|Typeof|Immutable/Primitive?
----|---|---
-`undefined`|undefined|Yes
-`null`|Object*|?
-`""`|String|Yes
-`123`|Number|Yes
-`true`|Boolean|Yes
-`[]`|Array|Yes
-[Object](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object)|Object|No
-[String](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String)|Object|No
-[Number](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number)|Object|No
-[Boolean](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean)|Object|No
-[Array](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array)|Object|No
-[RegExp](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/RegExp)|Object|No
-[Date](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date)|Object|No
-[Function](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Function)|Object|No
-[Map](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Map) / [WeakMap](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/WeakMap)|Object|No
-[Set](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Set) / [WeakSet](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/WeakSet)|Object|No
-* Note: `Null` is also a type, but `typeof(null)` is `Object`
 
 
 ## Algorithms
@@ -98,11 +129,12 @@ Algorithm | Time (Best) | Time (Average) | Time (Worst) | Space Complexity
 [Merge Sort](https://www.toptal.com/developers/sorting-algorithms/merge-sort)|Ω(n log(n))|Θ(n log(n))|O(n log(n))|O(n)
 [Heap Sort](https://www.toptal.com/developers/sorting-algorithms/heap-sort)|Ω(n log(n))|Θ(n log(n))|O(n log(n))|O(1)
 
-
-
 Resources:
 - http://bigocheatsheet.com/
 - https://www.toptal.com/developers/sorting-algorithms
+
+
+---
 
 ## Cracking the Coding Interview (6th Edition)
 
