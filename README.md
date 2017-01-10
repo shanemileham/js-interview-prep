@@ -50,7 +50,7 @@ Primitives are immutable, but objects are mutable.
 * String
 * Symbol
 
-### [Standard Objects](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects)
+### [Standard Objects](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects) (and useful methods)
 
 * [Object](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object)
   * `keys()` - Returns an array containing the names of all of the given object's own enumerable properties.
@@ -61,17 +61,9 @@ Primitives are immutable, but objects are mutable.
   * `apply(thisArg, [argsArray])` - Calls a function with a given `this` value and arguments provided as an array (or an array-like object).
   * `bind(thisArg[, arg1[, arg2[, ...]]])` - Creates a new function that, when called, has its `this` keyword set to the provided value, with a given sequence of arguments preceding any provided when the new function is called.
   * `call(thisArg[, arg1[, arg2[, ...]]])` - Calls a function with a given this value and arguments provided individually.
+  * _Use `.bind()` when you want that function to later be called with a certain context, useful in events. Use `.call()` or `.apply()` when you want to invoke the funciton immediately, and modify the context._
 * [Boolean](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean)
   * Do not confuse the primitive Boolean values true and false with the true and false values of the Boolean object. `new Boolean("false") === true`
-* [String](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String)
-  * `length` - Reflects the length of the string.
-  * `chatAr(index)` - Returns the character at the specified index.
-  * `charCodeAt(index)` - Returns a number indicating the Unicode value of the character at the given index.
-  * `indexOf(searchValue[, fromIndex])` - Returns the index within the calling String object of the first occurrence of the specified value, or -1 if not found.
-  * `match(regexp)` - Returns an Array containing the entire match result and any parentheses-captured matched results; null if there were no matches.
-  * `slice(beginSlice[, endSlice])` - Returns a new string containing the extracted section of the string.
-  * `split([separator[, limit]])` - Returns an array of strings split at each point where the separator occurs in the given string.
-  * `substring(indexStart[, indexEnd])` - Returns a new string containing the extracted section of the given string.
 * [Number](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number)
   * `EPSILON` - The smallest interval between two representable numbers
   * `MAX_SAFE_INTEGER` / `MIN_SAFE_INTEGER`
@@ -81,11 +73,51 @@ Primitives are immutable, but objects are mutable.
   * `isNaN()` - Determine whether the passed value is NaN.
   * `parseInt(string, radix)` - Returns an integer number parsed from the given string. If the first character cannot be converted to a number, NaN is returned.
   * `parseFloat(string)` - Returns a floating point number parsed from the given string. If the first character cannot be converted to a number, NaN is returned.
-* [Array](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array)
-  * METHOD
-* [RegExp](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/RegExp)
-  * METHOD
 * [Date](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date)
+  * `new Date()`;
+  * `new Date(value);`
+  * `new Date(dateString);`
+  * `new Date(year, month[, date[, hours[, minutes[, seconds[, milliseconds]]]]]);`
+  * `now()` - Returns the numeric value corresponding to the current time - the number of milliseconds elapsed since 1 January 1970 00:00:00 UTC, with leap seconds ignored.
+  * `getTime()` - Returns the numeric value of the specified date as the number of milliseconds since January 1, 1970, 00:00:00 UTC (negative for prior times).
+  * `getFullYear()` - Returns the year (4 digits for 4-digit years) of the specified date according to local time.
+  * `getDate()` - Returns the day of the month (1-31) for the specified date according to local time.
+  * `getDay()` - Returns the day of the week (0-6) for the specified date according to local time.
+  * `getHours()` - Returns the hour (0-23) in the specified date according to local time.
+* [String](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String)
+  * `length` - Reflects the length of the string.
+  * `chatAr(index)` - Returns the character at the specified index.
+  * `charCodeAt(index)` - Returns a number indicating the Unicode value of the character at the given index.
+  * `indexOf(searchValue[, fromIndex])` - Returns the index within the calling String object of the first occurrence of the specified value, or -1 if not found.
+  * `match(regexp)` - Returns an Array containing the entire match result and any parentheses-captured matched results; null if there were no matches.
+  * `slice(beginSlice[, endSlice])` - Returns a new string containing the extracted section of the string.
+  * `split([separator[, limit]])` - Returns an array of strings split at each point where the separator occurs in the given string.
+  * `substring(indexStart[, indexEnd])` - Returns a new string containing the extracted section of the given string.
+* [RegExp](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/RegExp)
+  * `new RegExp(/pattern/flags)`
+  * Special characters
+    * `g` - global match; find all matches rather than stopping after the first match
+    * `i` - ignore case
+    * `.` - Matches any single character except line terminators
+    * `\d` - Matches a digit character (Opposite: `\D`)
+    * `\w` - Matches any alphanumeric character, including the underscore (Opposite: `\W`)
+    * `\s` - Matches a single white space character (Opposite: `\S`)
+    * `[abcd]` or `[a-d]` - Matches any one of the enclosed characters (Opposite: `[^abcd]`)
+    * `one|two` - Matches either `one` or `two`
+    * `^` - Matches beginning of input
+    * `$` - Matches end of input
+    * `\b` - Matches a word boundary (alternated `\w` and `\W`)
+    * `\B` - Matches a non-word boundary
+    * `(x)` - Matches x and remembers the match. These are called capturing groups. The matches substring can be recalled from the resulting array's elements `[1], ..., [n]`
+    * `(?:x)` - Matches x but does not remember the match.
+    * `x*` - Matches the preceding item x 0 or more times.
+    * `x?` - Matches the preceding item x 0 or 1 time.
+    * `x{n,m}` - Where n and m are positive integers. Matches at least n and at most m occurrences of the preceding item x.
+    * `x*?` / `x??` / `x{n,m}` - Matches like above, but gets the smallest possible match. Quantifiers without ? are said to be greedy. Those with ? are called "non-greedy".
+    * `x(?=y)` - Matches x only if x is followed by y. (Opposite: `x(?!y)`)
+  * `exec(str)` - Executes a search for a match in a specified string. Returns a result array, or null.
+  * `test(str)` - Executes a search for a match between a regular expression and a specified string. Returns true or false.
+* [Array](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array)
   * METHOD
 * [Map](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Map) / [WeakMap](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/WeakMap)
   * METHOD
