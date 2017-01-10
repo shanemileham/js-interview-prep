@@ -118,7 +118,23 @@ Primitives are immutable, but objects are mutable.
   * `exec(str)` - Executes a search for a match in a specified string. Returns a result array, or null.
   * `test(str)` - Executes a search for a match between a regular expression and a specified string. Returns true or false.
 * [Array](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array)
-  * METHOD
+  * `[element0, element1, ..., elementN]`
+  * `new Array(element0, element1[, ...[, elementN]])`
+  * `new Array(arrayLength)`
+  * `length` - Reflects the number of elements in an array. (Highest number plus one)
+  * Mutator Methods
+    * `fill(value, start, end)` - Fills all the elements of an array from a start index to an end index with a static value.
+    * `pop()` - Removes the last element from an array and returns that element.
+    * `push([element1[, ...[, elementN]]])` - Adds one or more elements to the end of an array and returns the new length of the array.
+    * `shift()` - Removes the first element from an array and returns that element.
+    * `unshift([element1[, ...[, elementN]]])` - Adds one or more elements to the front of an array and returns the new length of the array.
+    * `splice(start, deleteCount, item1, item2, ...)` - Adds and/or removes elements from an array. If deleteCount is omitted, deleteCount will be equal to (arr.length - start). If you don't specify any elements, splice() will only remove elements from the array. Returns an array containing the deleted elements.
+    * `reverse()` - Reverses the order of the elements of an array in place — the first becomes the last, and the last becomes the first.
+    * `sort(compareFunction)` - Sorts the elements of an array in place and returns the array. If compareFunction is omitted, the array is sorted according to each character's Unicode code point value, according to the string conversion of each element.
+  * Accessor Methods
+    * `indexOf(searchElement, fromIndex=0)` - Returns the first (least) index of an element within the array equal to the specified value, or -1 if none is found.
+    * `join(separator=',')` - Joins all elements of an array into a string.
+    * `slice(begin=0, end=length)` - Extracts a section of an array and returns a new array.
 * [Map](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Map) / [WeakMap](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/WeakMap)
   * METHOD
 * [Set](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Set) / [WeakSet](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/WeakSet)
