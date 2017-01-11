@@ -147,16 +147,35 @@ Primitives are immutable, but objects are mutable.
     * `reduce(callback, [initialValue])` - Apply a function against an accumulator and each value of the array (from left-to-right) as to reduce it to a single value. Callback function takes (accumulator, currentValue, currentIndex, array).
     * `reduceRight(callback[, initialValue])` - Apply a function against an accumulator and each value of the array (from right-to-left) as to reduce it to a single value. Callback function takes (accumulator, currentValue, currentIndex, array).
 * [Map](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Map) / [WeakMap](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/WeakMap)
-  * METHOD
+  * An Object has a prototype, so there are default keys in the map that could collide with your keys if you're not careful. This could be bypassed by using map = Object.create(null) since ES5, but was seldom done.
+  * The keys of an Object are Strings and Symbols, whereas they can be any value for a Map, including functions, objects, and any primitive.
+  * You can get the size of a Map easily with the size property, while the size of an Object must be determined manually.
+  * `new Map([iterable])`
+  * `size` - Returns the number of key/value pairs in the Map object. (NOT possible with weak)
+  * `clear()` - Removes all key/value pairs from the Map object. (NOT possible with weak)
+  * `set(key, value)` - Sets the value for the key in the Map object. Returns the Map object.
+  * `has(key)` - Returns a boolean asserting whether a value has been associated to the key in the Map object or not.
+  * `get(key)` - Returns the value associated to the key, or undefined if there is none.
+  * `delete(key)` - Removes any value associated to the key and returns the value that `Map.prototype.has(key)` would have previously returned. `Map.prototype.has(key)` will return false afterwards.
 * [Set](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Set) / [WeakSet](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/WeakSet)
-  * METHOD
+  * `new Set([iterable])`
+  * `clear()` - Removes all elements from the Set object.
+  * `add(value)` - Appends a new element with the given value to the Set object. Returns the Set object.
+  * `has(value)` - Returns a boolean asserting whether an element is present with the given value in the Set object or not.
+  * `delete(value)` - Removes the element associated to the value and returns the value that Set.prototype.has(value) would have previously returned. Set.prototype.has(value) will return false afterwards.
 * Iterations
   * `for ([initialization]; [condition]; [final-expression])`
   * `for (enumerableKey in object)` - loops through the enumerable properties of an object, not the indexes of an array. The order is not guaranteed
   * `for (value of iterableObject)` - loops through the iterableObject in order.
-  * `while`
-  * `do...while`
-
+  * `while` - creates a loop that executes a specified statement as long as the test condition evaluates to true.
+  * `do {} while ()` - creates a loop that executes a specified statement until the test condition evaluates to false.
+* [Promises](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise)
+  * `all(iterable)` - Returns a promise that either fulfills when all of the promises in the iterable argument have fulfilled or rejects as soon as one of the promises in the iterable argument rejects. If the returned promise fulfills, it is fulfilled with an array of the values from the fulfilled promises in same order as defined in the iterable. If the returned promise rejects, it is rejected with the reason from the first promise in the iterable that rejected. This method can be useful for aggregating results of multiple promises.
+  * `race(iterable)` - Returns a promise that fulfills or rejects as soon as one of the promises in the iterable fulfills or rejects, with the value or reason from that promise.
+  * `reject(reason)` - Returns a Promise object that is rejected with the given reason.
+  * `resolve(value)` - Returns a Promise object that is resolved with the given value. If the value is a thenable (i.e. has a then method), the returned promise will "follow" that thenable, adopting its eventual state; otherwise the returned promise will be fulfilled with the value. Generally, if you don't know if a value is a promise or not, Promise.resolve(value) it instead and work with the return value as a promise.
+  * `catch(onRejected)` - Appends a rejection handler callback to the promise, and returns a new promise resolving to the return value of the callback if it is called, or to its original fulfillment value if the promise is instead fulfilled.
+  * `then(onFulfilled, onRejected)` - Appends fulfillment and rejection handlers to the promise, and returns a new promise resolving to the return value of the called handler, or to its original settled value if the promise was not handled (i.e. if the relevant handler onFulfilled or onRejected is not a function).
 ---
 
 ## Abstract Data Structures
