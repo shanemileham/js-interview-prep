@@ -21,6 +21,7 @@
 * [Cracking the Coding Interview (6th Edition)](https://www.amazon.com/Cracking-Coding-Interview-Programming-Questions/dp/0984782850/ref=dp_ob_title_bk)
 * [Cracking the Coding Interview JS Solutions](https://github.com/careercup/CtCI-6th-Edition-JavaScript-ES2015)
 * [Awesome Interview Questions](https://github.com/MaximAbramchuck/awesome-interview-questions) [![Awesome](https://cdn.rawgit.com/sindresorhus/awesome/d7305f38d29fed78fa85652e3a63e154dd8e8829/media/badge.svg)](https://github.com/sindresorhus/awesome)
+* [Google Interview Prep (Full)](https://github.com/jwasham/google-interview-university)
 
 ### ES2015 Resources
 * [ES6 Features](https://github.com/lukehoban/es6features)
@@ -136,19 +137,25 @@ Primitives are immutable, but objects are mutable.
     * `join(separator=',')` - Joins all elements of an array into a string.
     * `slice(begin=0, end=length)` - Extracts a section of an array and returns a new array.
   * Iteration Methods
-    * `find()` - Returns the found value in the array, if an element in the array satisfies the provided testing function or undefined if not found.
-    * `findIndex()` - Returns the found index in the array, if an element in the array satisfies the provided testing function or -1 if not found.
-    * `every()` - Returns true if every element in this array satisfies the provided testing function.
-    * `some()` - Returns true if at least one element in this array satisfies the provided testing function.
-    * `filter()` - Creates a new array with all of the elements of this array for which the provided filtering function returns true.
-    * `forEach()` - Calls a function for each element in the array.
-    * `map()` - Creates a new array with the results of calling a provided function on every element in this array.
-    * `reduce()` - Apply a function against an accumulator and each value of the array (from left-to-right) as to reduce it to a single value.
-    * `reduceRight()` - Apply a function against an accumulator and each value of the array (from right-to-left) as to reduce it to a single value.
+    * `find(callback[, thisArg])` - Returns the found value in the array, if an element in the array satisfies the provided testing function or undefined if not found. Callback function takes (element, index, array).
+    * `findIndex(callback[, thisArg])` - Returns the found index in the array, if an element in the array satisfies the provided testing function or -1 if not found. Callback function takes (element, index, array).
+    * `every(callback[, thisArg])` - Returns true if every element in this array satisfies the provided testing function. Callback function takes (element, index, array).
+    * `some(callback[, thisArg])` - Returns true if at least one element in this array satisfies the provided testing function. Callback function takes (element, index, array).
+    * `filter(callback[, thisArg])` - Creates a new array with all of the elements of this array for which the provided filtering function returns true. Callback function takes (element, index, array).
+    * `forEach(callback[, thisArg])` - Calls a function for each element in the array. Callback function takes (element, index, array).
+    * `map(callback[, thisArg])` - Creates a new array with the results of calling a provided function on every element in this array. Callback function takes (element, index, array).
+    * `reduce(callback, [initialValue])` - Apply a function against an accumulator and each value of the array (from left-to-right) as to reduce it to a single value. Callback function takes (accumulator, currentValue, currentIndex, array).
+    * `reduceRight(callback[, initialValue])` - Apply a function against an accumulator and each value of the array (from right-to-left) as to reduce it to a single value. Callback function takes (accumulator, currentValue, currentIndex, array).
 * [Map](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Map) / [WeakMap](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/WeakMap)
   * METHOD
 * [Set](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Set) / [WeakSet](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/WeakSet)
   * METHOD
+* Iterations
+  * `for ([initialization]; [condition]; [final-expression])`
+  * `for (enumerableKey in object)` - loops through the enumerable properties of an object, not the indexes of an array. The order is not guaranteed
+  * `for (value of iterableObject)` - loops through the iterableObject in order.
+  * `while`
+  * `do...while`
 
 ---
 
