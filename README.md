@@ -4,7 +4,6 @@
 [![Dependency Badge](https://david-dm.org/shanemileham/js-interview-prep.svg)](https://david-dm.org/shanemileham/js-interview-prep)
 [![Dependency Dev Badge](https://david-dm.org/shanemileham/js-interview-prep/dev-status.svg)](https://david-dm.org/shanemileham/js-interview-prep?type=dev)
 
-
 ## Resources
 
 ### Basics
@@ -131,7 +130,7 @@ Primitives are immutable, but objects are mutable.
     * `unshift([element1[, ...[, elementN]]])` - Adds one or more elements to the front of an array and returns the new length of the array.
     * `splice(start, deleteCount, item1, item2, ...)` - Adds and/or removes elements from an array. If deleteCount is omitted, deleteCount will be equal to (arr.length - start). If you don't specify any elements, splice() will only remove elements from the array. Returns an array containing the deleted elements.
     * `reverse()` - Reverses the order of the elements of an array in place — the first becomes the last, and the last becomes the first.
-    * `sort(compareFunction)` - Sorts the elements of an array in place and returns the array. If compareFunction is omitted, the array is sorted according to each character's Unicode code point value, according to the string conversion of each element.
+    * `sort(compareFunction)` - Sorts the elements of an array in place and returns the array. If compareFunction is omitted, the array is sorted according to each character's Unicode code point value, according to the string conversion of each element. Compare function for numbers as example: `(a,b) => a-b`.
   * Accessor Methods
     * `indexOf(searchElement, fromIndex=0)` - Returns the first (least) index of an element within the array equal to the specified value, or -1 if none is found.
     * `join(separator=',')` - Joins all elements of an array into a string.
@@ -176,7 +175,7 @@ Primitives are immutable, but objects are mutable.
   * `resolve(value)` - Returns a Promise object that is resolved with the given value. If the value is a thenable (i.e. has a then method), the returned promise will "follow" that thenable, adopting its eventual state; otherwise the returned promise will be fulfilled with the value. Generally, if you don't know if a value is a promise or not, Promise.resolve(value) it instead and work with the return value as a promise.
   * `catch(onRejected)` - Appends a rejection handler callback to the promise, and returns a new promise resolving to the return value of the callback if it is called, or to its original fulfillment value if the promise is instead fulfilled.
   * `then(onFulfilled, onRejected)` - Appends fulfillment and rejection handlers to the promise, and returns a new promise resolving to the return value of the called handler, or to its original settled value if the promise was not handled (i.e. if the relevant handler onFulfilled or onRejected is not a function).
-  
+
 ---
 
 ## Abstract Data Structures
@@ -227,64 +226,163 @@ Resources:
 The book covers much more than just these questions;
 this repository is primarily for my own use in preparing for a JavaScript position.*
 
+Things to keep in mind while solving problems involving...
+
 ### Chapter 1 - Arrays and Strings
-- [x] 1.1 - Is Unique
-- [x] 1.2 - Check Permutation
-- [x] 1.3 - URLify
-- [x] 1.4 - Palindrome Permutation
-- [ ] 1.5 - One Away
-- [ ] 1.6 - String Compression
-- [ ] 1.7 - Rotate Matrix
-- [ ] 1.8 - Zero Matrix
-- [ ] 1.9 - String Rotation
+* JS Array
+* Objects (dictionary / hash table)
+* Array (array list)
+* Sparse array
 
 ### Chapter 2 - Linked Lists
-- [x] 2.1 - Remove Dups
-- [ ] 2.2 - Return Kth to Last
-- [ ] 2.3 - Delete Middle Node
-- [ ] 2.4 - Partition
-- [ ] 2.5 - Sum Lists
-- [ ] 2.6 - Palindrome
-- [ ] 2.7 - Intersection
-- [ ] 2.8 - Loop Detection
+* JS Array (all up to engine implementation)
+* Nodes
+* Runners
+* Recursive
 
 ### Chapter 3 - Stacks and Queues
-- [ ] 3.1 - Three in One
-- [ ] 3.2 - Stack Min
-- [ ] 3.3 - Stack of Plates
-- [ ] 3.4 - Queue via Stacks
-- [ ] 3.5 - Sort Stack
-- [ ] 3.6 - Animal Shelter
+* JS Array
+* Plates to represent a stack
+* Like an Array / Hash Map / Object / LinkedList
 
 ### Chapter 4 - Trees and Graphs
-- [ ] 4.1 - Route Between Nodes
-- [ ] 4.2 - Minimal Tree
-- [ ] 4.3 - List of Depths
-- [ ] 4.4 - Check Balanced
-- [ ] 4.5 - Validate BST
-- [ ] 4.6 - Successor
-- [ ] 4.7 - Build Order
-- [ ] 4.8 - First Common Ancestor
-- [ ] 4.9 - BST Sequences
-- [ ] 4.10 - Check Subtree
-- [ ] 4.11 - Random Node
-- [ ] 4.12 - Paths with Sum
+* Binary Trees
+  * Binary Search Tree: BT where left is less and right is more
+  * Balanced vs. Unbalanced
+  * Complete Binary: All filled except last level, filled L→R
+  * Full Binary: Every node has 0 or 2 children
+  * Perfect Binary: Full and complete. 2**k-1 nodes.
+* Binary Tree Traversal
+  * In-Order (LvR)
+  * Pre-Order (vLR) (root is first)
+  * Post-Order (LRv) (root is last)
+* Binary Heaps
+  * Insert: put next and bubble up
+  * Extract: remove, put last at top, bubble down
+* Tries (prefix trees)
+  * Each node is a letter
+  * Has a termination node (bool or subclass)
+* Graphs
+  * Node Class (nodes have adj = [])
+  * Adjacency Matrix [[][][]] nxn
+  * Adjacency List (left compressed matrix with values instead of flags)
+* Graph Search
+  * Depth First Search (recursive)
+    * Stack push, mark visited
+  * Breadth First Search (queue)
+    * Queue push
+  * Bidirectional BFS (shortest path)
+
 
 ### Chapter 5 - Bit Manipulation
+```
+* &, |, ^, ~ (all in 2s complement)
+* << (L shift zero), >> (sign propagating R), >>> (zero fill R)
+* GET(k): num & 1<<k
+* SET(k): num | 1<<k
+* CLEAR(k): num & ~(1<<k)
+* CLEAR(i,j): num & ~(-1>>>i & -1<<j)
+* UPDATE = clear, set = (num & mask) | (1<<k)
+* Also use 2**k
+```
+
 
 ### Chapter 6 - Math and Logic Puzzles
+Prime Numbers
+* Unique factorization
+* `x = 2**j0 + 3**j1 + …`
+* `y = 2**k0 + 3**k1 + … `
+* `gcd(x,y) = 2**min(j0,k0) + 3**min(j1,k1) + … `
+* `lcm(x,y) = 2**max(j0,k0) + 3**max(j1,k1) + … `
+* `gcd(x,y) + lcm(x,y) = xy`
+* Sieve of Eratosthenes
+  * Cross off all numbers divisible by 2
+  * Next number (3) is a prime
+  * Repeat with next number
+
+Probability
+* P(A,B) = P(B)P(A|B) = P(A)P(B|A)
+* BAYES: P(A|B) = P(B|A)P(A)/P(B)
+* P(A|B) = P(A)+P(B)-P(A,B)
+* Independent: one happening tells you nothing about the other happening. Orthogonal. P(A,B) = P(A)+P(B). Also P(B|A) = P(B) because A indicates nothing about B.
+* Mutually Exclusive: if one happens, then the other cannot happen. P(A,B) = P(A)+P(B)
+
+Notes
+* Write down lemmas
+* Worst case shifting - balance worst with best to decrease average (like 9 ball problem)
+
+
 
 ### Chapter 7 - Object-Oriented Design
+How to approach
+* Handle ambiguity (clarify)
+* Define core concepts (DB Tables)
+* Analyze Relationships (DB Relationships)
+* Investigate Actions (Behavioral API Endpoints)
+
+Design Patterns
+* Singleton (often anti-pattern)
+* Factory method - creates an instance of a class with subclasses deciding which class to instantiate `function createCardGame(gameType)`
+
+
 
 ### Chapter 8 - Recursion and Dynamic Programming
+* How to Identify
+  * Can be built off of subproblems
+  * “Design an algorithm to compute the nth…” (if it depends on the n-1 for example)
+* How to approach
+  * Bottom up - simple case, then build
+  * Top down - divide case N into subproblems
+  * Half and half - like merge sort
+  * All recursive algorithms can be implemented iteratively (code can be more complex)
+* Dynamic programming and memoization - recursion with caching (can go top down or bottom up) Bottom up is more memory efficient, at least in the case of fib.
 
-### Chapter 10 - Sorting and Searching
 
-### Chapter 16 - Moderate
+### Testing and Threads
+Testing
+* Software: Are we doing Black Box Testing * or White Box Testing?
+* Who will use it? Why?
+* What are the use cases?
+* What are the bounds of use?
+* What are the failure conditions?
+* How would you perform the testing? What * are the test cases?
+  * Normal case
+  * Extreme case
+  * Illegal input (null, undefined)
+  * Strange input
 
-### Chapter 17 - Hard
+Threads
+* Deadlock conditions
+  * Mutual exclusion (only one process can access resource)
+  * Hold and Wait (process holding resources can request additional resources without relinquishing)
+  * No Preemption (process cannot remove another process’ resource)
+  * Circular Wait (2+ processes form a circular chain waiting for other’s resource)
 
-### Omitted Chapters
-* 9 - System Design and Scalability: No coding / Not in the scope of this preparation guide
-* 11 - Testing: Used on all coding questions
-* 12-15: Language specific; not relevant
+
+## Problem Solving Steps
+1. Clarify
+  1. Write down question and bold important/unique parts
+  2. Draw an example (make sure I understand the question)
+  3. Write table of testing I/O; doubles as TDD/BDD (make sure I understand desired behavior); Ask what kind and range of inputs I can expect
+2. Solve
+  1. Start:
+    * Solve manually (intuition) ||
+    * Brute force ||
+    * Base Case and Build ||
+    * DS Brainstorm
+  2. Optimize
+    * BUD - Bottlenecks, Unnecessary work, * Duplicated work
+    * Simplify and Generalize
+    * Best Conceivable Runtime (based on * inputs and outputs)
+  3. Convert to code
+  4. Error Checking - Note TODOs
+3. Test
+  1. Walk through like code review
+  2. Weird code, Hot spots…
+  3. Small test cases
+  4. Special cases
+  5. Large cases
+
+Notes
+* Pretend needed classes exist
+* Abbreviate long variable names in successive use
