@@ -64,13 +64,14 @@ Primitives are immutable, but objects are mutable.
   * _Use `.bind()` when you want that function to later be called with a certain context, useful in events. Use `.call()` or `.apply()` when you want to invoke the funciton immediately, and modify the context._
 * [Boolean](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean)
   * Do not confuse the primitive Boolean values true and false with the true and false values of the Boolean object. `new Boolean("false") === true`
-* [Number](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number)
+* [Number](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number) ([Double-Precision Floating-Point](https://en.wikipedia.org/wiki/Double-precision_floating-point_format) [Interactive](http://bartaz.github.io/ieee754-visualization/))
   * `EPSILON` - The smallest interval between two representable numbers
   * `MAX_SAFE_INTEGER` / `MIN_SAFE_INTEGER`
   * `MAX_VALUE` / `MIN_VALUE`
   * `POSITIVE_INFINITY` / `NEGATIVE_INFINITY`
   * `NaN` - Special "not a number" value
   * `isNaN()` - Determine whether the passed value is NaN.
+  * `toString([radix])` - returns a string representing the specified Number object. Radix is in [2,36].
   * `parseInt(string, radix)` - Returns an integer number parsed from the given string. If the first character cannot be converted to a number, NaN is returned.
   * `parseFloat(string)` - Returns a floating point number parsed from the given string. If the first character cannot be converted to a number, NaN is returned.
 * [Date](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date)
@@ -89,6 +90,7 @@ Primitives are immutable, but objects are mutable.
   * `chatAr(index)` - Returns the character at the specified index.
   * `charCodeAt(index)` - Returns a number indicating the Unicode value of the character at the given index.
   * `indexOf(searchValue[, fromIndex])` - Returns the index within the calling String object of the first occurrence of the specified value, or -1 if not found.
+  * `replace(regexp|substr, newSubstr|function)` - Returns a new string with some or all matches of a pattern replaced by a replacement. The pattern can be a string or a RegExp, and the replacement can be a string or a function to be called for each match.
   * `match(regexp)` - Returns an Array containing the entire match result and any parentheses-captured matched results; null if there were no matches.
   * `slice(beginSlice[, endSlice])` - Returns a new string containing the extracted section of the string.
   * `split([separator[, limit]])` - Returns an array of strings split at each point where the separator occurs in the given string.
